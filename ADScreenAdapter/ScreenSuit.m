@@ -27,19 +27,5 @@
     return value;
 }
 
-/*
- 宽、高分别按照各个屏幕宽高比例缩放
- */
-//适配宽
-+ (float)suitWidth:(float)width {
-    IS_WIDTH320 ? (width = width / Suit320Width) : (IS_WIDTH414 ? (width = width * Suit414Width) : width);
-    return width;
-}
-
-//适配高
-+ (float)suitHeight:(float)height {
-    IS_HEIGHT568 ? (height = height / Suit568Height) : (IS_HEIGHT736 ? (height = height * Suit736Height) : (IS_HEIGHT812 ? (height = height * Suit812Height) : (IS_HEIGHT896 ? (height = height * Suit896Height) : height)));
-    return height;
-}
 
 @end

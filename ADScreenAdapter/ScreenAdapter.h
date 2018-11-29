@@ -17,17 +17,8 @@
  宽度适配，以4.7寸屏幕为基准
  总共三种尺寸，320，375，414
  */
-#define Suit320Width            375/320
-#define Suit414Width            414/375
-
-/**
- 高度适配，以4.7寸屏幕为基准
- 总共五种尺寸，568，667，736，812，896
- */
-#define Suit568Height           667/568
-#define Suit736Height           736/667
-#define Suit812Height           812/667
-#define Suit896Height           896/667
+#define Suit320Width            1.171875
+#define Suit414Width            1.104
 
 // 系统判定
 #define IOS_VERSION    [[[UIDevice currentDevice] systemVersion] floatValue]
@@ -48,13 +39,6 @@
 #define IS_WIDTH320     (IS_IPHONE4INCH ? YES : NO)
 #define IS_WIDTH375     ((IS_IPHONE47INCH || IS_IPHONE58INCH) ? YES : NO)
 #define IS_WIDTH414     ((IS_IPHONE55INCH || IS_IPHONE6INCH) ? YES : NO)
-
-//屏高
-#define IS_HEIGHT568     (IS_IPHONE4INCH ? YES : NO)
-#define IS_HEIGHT667     (IS_IPHONE47INCH ? YES : NO)
-#define IS_HEIGHT736     (IS_IPHONE55INCH ? YES : NO)
-#define IS_HEIGHT812     (IS_IPHONE58INCH ? YES : NO)
-#define IS_HEIGHT896     (IS_IPHONE6INCH ? YES : NO)
 
 // naviBar, statusBar, tabBar
 #define IS_SPECIALHEIGHTBAR         ((IS_IPHONE58INCH || IS_IPHONE6INCH) ? YES : NO)

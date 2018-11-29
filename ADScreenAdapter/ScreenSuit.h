@@ -24,14 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (float)suit:(float)value;
 
-/*
- 宽、高分别按照各个屏幕宽高比例缩放
- */
-//适配宽
-+ (float)suitWidth:(float)width;
-
-//适配高
-+ (float)suitHeight:(float)height;
 
 @end
 
